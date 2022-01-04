@@ -31,10 +31,12 @@ const NavLinks = styled.div`
     width: 100%;
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 
     a {
+      color: black;
+      text-decoration: none;
       padding: 0 20px;
     }
   `}
@@ -42,15 +44,15 @@ const NavLinks = styled.div`
 
 export default function NavBar() {
   return (
-    <Container>
+    <Container fluid>
       <Row>
         <Nav>
-          <Column responsivity={{ md: 6 }} textAlign={{ md: "start" }}>
+          <Column responsivity={{ md: 6 }} textAlign={{ md: "center" }}>
             <Logo>
               <img src={logo} alt="logo" />
             </Logo>
           </Column>
-          <Column responsivity={{ md: 6 }} textAlign={{ md: "end" }}>
+          <Column responsivity={{ md: 6 }} textAlign={{ md: "center" }}>
             <NavLinks>
               <a href="#about">About</a>
               <a href="#projects">Projects</a>

@@ -2,13 +2,14 @@
 import React from "react";
 
 // Local components
+import Hero from "./Components/Hero/Hero";
 import Layout from "./Components/Layout/Layout";
 
 function App() {
   return (
     <div className="App">
       <Layout>
-        <h1>hello</h1>
+        <Hero />
       </Layout>
     </div>
   );
