@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 
-// require("dotenv").config();
-
 export default function Form() {
   const form = useRef(null);
 
