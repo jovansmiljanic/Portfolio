@@ -2,11 +2,6 @@
   "compilerOptions": {
     "target": "es6",
     "baseUrl": ".",
-    "paths": {
-      "@/Components/*": ["src/Components/*"],
-      "@/styles/*": ["styles/*"],
-      "@/data/*": ["src/data/*"]
-    },
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,

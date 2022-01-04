@@ -1,22 +1,22 @@
 // Types
-import type { FC } from "react"
+import type { FC } from "react";
 
 // Vendors
-import styled, { css } from "styled-components"
+import styled, { css } from "styled-components";
 
 interface Props {
-  fluid?: boolean
-  fullHeight?: boolean
-  alignItems?: string
-  justifyContent?: string
-  backgroundColor?: string
-  color?: string
-  [key: string]: any
+  fluid?: boolean;
+  height?: string;
+  alignItems?: string;
+  justifyContent?: string;
+  backgroundColor?: string;
+  color?: string;
+  [key: string]: any;
 }
 
 const Container = styled.div<Props>`
   width: 100%;
-  // display: flex;
+  display: flex;
   // flex-direction: column;
   // flex-wrap: wrap;
   margin-left: auto;
@@ -25,7 +25,7 @@ const Container = styled.div<Props>`
   ${({
     alignItems,
     justifyContent,
-    fullHeight,
+    height,
     fluid,
     theme: { defaultGutter, breakpoints, colors },
   }) => css`
@@ -46,14 +46,15 @@ const Container = styled.div<Props>`
     }
     `}
 
-    ${fullHeight &&
+    ${height &&
     `
-      height: 100vh
+      height: ${height}vh;
     `}
 
 
     ${alignItems &&
     `
+    
       align-items: ${alignItems};
       `}
       ${justifyContent &&
@@ -61,7 +62,7 @@ const Container = styled.div<Props>`
       justify-content: ${justifyContent};
       `}
   `}
-`
+`;
 
 const Wrapper = styled.div<{ backgroundColor: string; textColor: string }>`
   width: 100%;
@@ -83,7 +84,7 @@ const Wrapper = styled.div<{ backgroundColor: string; textColor: string }>`
   `
   }
 `}
-`
+`;
 
 const index: FC<Props> = ({
   color,
@@ -101,13 +102,13 @@ const index: FC<Props> = ({
       <Container
         alignItems={props.alignItems}
         justifyContent={props.justifyContent}
-        fullHeight={props.fullHeight}
+        height={props.height}
         fluid={props.fluid}
       >
         {children}
       </Container>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default index
+export default index;

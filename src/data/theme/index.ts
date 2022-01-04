@@ -3,12 +3,11 @@ const defaultTheme = {
   defaultGutter: 1,
   defaultRadius: 6,
   colors: {
-    primary: "#BAD2ED",
-    secondary: "#001973",
+    primary: "#374151",
+    secondary: "#60a5fa",
     green: "#C7E8E6",
     red: "#DB3D23",
     white: "#ffffff",
-    grey: "#F9F9F9",
     black: "#000000",
     dark: "#060A1C",
   },
@@ -28,6 +27,7 @@ const defaultTheme = {
       medium: 500,
       semiBold: 600,
       bold: 700,
+      extraBold: 800,
     },
   },
   breakpoints: {
@@ -36,7 +36,7 @@ const defaultTheme = {
     lg: 1024,
     xl: 1200,
   },
-}
+};
 
 // Export default Light and Dark themes
 export const Theme: any = {
@@ -58,4 +58,4 @@ export const Theme: any = {
       ...defaultTheme.colors,
     },
   },
-}
+};

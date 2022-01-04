@@ -7,6 +7,7 @@ interface TextTypes {
   dark?: boolean;
   padding?: { [key: string]: number };
   textAlign?: { [key: string]: string };
+  fontSize?: string;
 }
 
 const Headings = ({ as, def }: any) => {
@@ -37,6 +38,7 @@ export const Text = styled.h1<TextTypes>`
     color,
     textAlign,
     dark,
+    fontSize,
     padding,
     theme: { colorDark, font, colors, spaces, breakpoints },
   }) => css`
@@ -81,6 +83,10 @@ export const Text = styled.h1<TextTypes>`
     ${color &&
     `
     color: ${colors[color]};
+    `}
+    ${fontSize &&
+    `
+    font-size: ${fontSize}px;
     `}
   `}
 `;
