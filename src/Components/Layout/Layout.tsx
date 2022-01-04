@@ -13,7 +13,7 @@ export default function Layout(props: LayoutProps) {
     <>
       <NavBar />
       {props.children}
-      <h1>footer</h1>
+      <h1>footerrr</h1>
     </>
   );
 }
