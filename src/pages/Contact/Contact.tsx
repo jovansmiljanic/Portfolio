@@ -38,7 +38,7 @@ const InfoGroup = styled.form`
     margin: 50px 0;
 
     display: flex;
-    justify-contetn: center;
+    justify-content: flex-start;
     align-items: center;
 
     svg {
@@ -68,12 +68,6 @@ const Input = styled.input`
 
 const Textarea = styled.textarea`
   ${({ theme: { colors, defaultRadius, defaultGutter, font } }) => css`
-    border-width: 1px;
-    border-style: solid;
-    text-decoration: none;
-    display: inline-flex;
-    cursor: pointer;
-
     padding: 5px 10px;
     width: 85%;
     outline: none;
@@ -91,6 +85,11 @@ const Textarea = styled.textarea`
 `;
 
 export const Button = styled.button`
+  border-width: 1px;
+  border-style: solid;
+  text-decoration: none;
+  display: inline-flex;
+  cursor: pointer;
   ${({ theme: { colors, defaultRadius, defaultGutter } }) => css`
     border-color: ${colors["secondary"]};
     padding: ${defaultGutter / 1.5}rem ${defaultGutter}rem;

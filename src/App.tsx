@@ -3,9 +3,12 @@ import React from "react";
 
 // Local components
 import Layout from "./components/Layout/Layout";
+
+// Pages
 import Hero from "./pages/Hero/Hero";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
+import Projects from "./pages/Projects/Projects";
 
 function App() {
   return (
@@ -13,6 +16,7 @@ function App() {
       <Layout>
         <Hero />
         <About />
+        <Projects />
         <Contact />
       </Layout>
     </div>
