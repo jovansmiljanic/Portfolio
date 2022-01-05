@@ -15,6 +15,37 @@ const ExpGroup = styled.div`
 `;
 
 export default function About() {
+  const expiriences = [
+    {
+      jobTitle: "Web developer at Consalta (Full-time)",
+      jobDuration: "October 2021 - present",
+    },
+    {
+      jobTitle: " Website administrator at AdStar - Digital Agency (Freelance)",
+      jobDuration: " March 2021 - November 2021",
+    },
+    {
+      jobTitle: "Frontend developer at KlikNova d.o.o (Full-time)",
+      jobDuration: "June 2021 - October 2021",
+    },
+  ];
+
+  const skills = [
+    {
+      skillTitle: "Basic skills:",
+      skillValues: "HTML, CSS, JavaScript, TypeScript",
+    },
+    {
+      skillTitle: "Frameworks:",
+      skillValues: "ReactJS, NextJS",
+    },
+    {
+      skillTitle: "Libraries and tools:",
+      skillValues:
+        "WordPress, Git, Docker, Tailwind, SASS, jQuery, Bootstrap...",
+    },
+  ];
+
   return (
     <Container
       id="about"
@@ -24,68 +55,49 @@ export default function About() {
     >
       <Row>
         <Column responsivity={{ md: 6, sm: 12 }}>
-          <Text as="h3" color="secondary">
+          <Text as="h4" color="secondary">
             &lt;experience&gt;
           </Text>
 
-          <ExpGroup>
-            <Text as="h5" color="primary">
-              Web developer at Consalta (Full-time)
-            </Text>
-            <Text as="h6" color="secondary">
-              October 2021 - present
-            </Text>
-          </ExpGroup>
-          <ExpGroup>
-            <Text as="h5" color="primary">
-              Website administrator at AdStar - Digital Agency (Freelance)
-            </Text>
-            <Text as="h6" color="secondary">
-              March 2021 - November 2021
-            </Text>
-          </ExpGroup>
-          <ExpGroup>
-            <Text as="h5" color="primary">
-              Frontend developer at KlikNova d.o.o (Full-time)
-            </Text>
-            <Text as="h6" color="secondary">
-              June 2021 - October 2021
-            </Text>
-          </ExpGroup>
+          {Array.isArray(expiriences)
+            ? expiriences
+              ? expiriences.map(expirience => (
+                  <ExpGroup key={expirience.jobTitle}>
+                    <Text as="h6" color="primary">
+                      {expirience.jobTitle}
+                    </Text>
 
-          <Text as="h3" color="secondary">
+                    <Text as="h6" color="secondary">
+                      {expirience.jobDuration}
+                    </Text>
+                  </ExpGroup>
+                ))
+              : "Loading"
+            : "Check back later"}
+
+          <Text as="h4" color="secondary">
             &lt;/experience&gt;
           </Text>
         </Column>
-
-        <Column responsivity={{ md: 6, sm: 12 }}>
-          <Text as="h2" color="secondary">
+        <Column responsivity={{ md: 1, sm: 0 }}></Column>
+        <Column responsivity={{ md: 5, sm: 12 }}>
+          <Text as="h4" color="secondary">
             &lt;skills&gt;
           </Text>
-          <ExpGroup>
-            <Text as="h5" color="primary">
-              Basic skills:
-              <span> HTML, CSS, JavaScript, TypeScript</span>
-            </Text>
-          </ExpGroup>
-          <ExpGroup>
-            <Text as="h5" color="primary">
-              Frameworks:
-              <span> ReactJS, NextJS</span>
-            </Text>
-          </ExpGroup>
 
-          <ExpGroup>
-            <Text as="h5" color="primary">
-              Libraries and tools:
-              <span>
-                {" "}
-                WordPress, Git, Docker, Tailwind, SASS, jQuery, Bootstrap...
-              </span>
-            </Text>
-          </ExpGroup>
+          {Array.isArray(skills)
+            ? skills
+              ? skills.map(skill => (
+                  <ExpGroup key={skill.skillTitle}>
+                    <Text as="h6" color="primary">
+                      {skill.skillTitle} <span>{skill.skillValues}</span>
+                    </Text>
+                  </ExpGroup>
+                ))
+              : "Loading"
+            : "Check back later"}
 
-          <Text as="h2" color="secondary">
+          <Text as="h4" color="secondary">
             &lt;/skills&gt;
           </Text>
         </Column>

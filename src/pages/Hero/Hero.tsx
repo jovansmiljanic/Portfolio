@@ -47,9 +47,9 @@ export default function Hero() {
       height="80"
     >
       <Row justifyContent="center">
-        <Column responsivity={{ md: 8 }} textAlign={{ md: "center" }}>
+        <Column responsivity={{ md: 12 }} textAlign={{ md: "center" }}>
           <HeroTitle>
-            <Text as="h1" fontSize="45">
+            <Text as="h1" fontSize="40">
               Hi, I am <span>Jovan Smiljanic</span>
             </Text>
             <Text as="h4">Self-taught Frontend developer.</Text>
