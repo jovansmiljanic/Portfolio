@@ -51,7 +51,7 @@ export default function About() {
       id="about"
       justifyContent="center"
       alignItems="center"
-      height="80"
+      height="65"
     >
       <Row>
         <Column responsivity={{ md: 6, sm: 12 }}>

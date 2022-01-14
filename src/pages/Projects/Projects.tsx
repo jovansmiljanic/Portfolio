@@ -61,6 +61,10 @@ const Links = styled.div`
   }
 `;
 
+const Projectss = styled.div`
+  padding: 150px 0 100px 0;
+`;
+
 export default function Projects() {
   const myProjects = [
     {
@@ -161,7 +165,7 @@ export default function Projects() {
   const reactProjects = myProjects.filter(project => project.tags === "react");
 
   return (
-    <>
+    <Projectss>
       <Container id="projects" justifyContent="center" alignItems="center">
         <Row justifyContent="center" alignItems="center">
           <Button onClick={() => setProjects(allProjects)}>All</Button>
@@ -198,6 +202,6 @@ export default function Projects() {
             </SwiperSlide>
           ))}
       </Swiper>
-    </>
+    </Projectss>
   );
 }

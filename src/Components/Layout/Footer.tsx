@@ -49,6 +49,12 @@ const FooterInfo = styled.div`
   `}
 `;
 
+const Logo = styled.div`
+  img {
+    width: 60px;
+  }
+`;
+
 export default function Footer() {
   const information = [
     {
@@ -68,17 +74,17 @@ export default function Footer() {
         <Column
           responsivity={{ md: 12 }}
           textAlign={{ md: "center" }}
-          padding={{ top: 4, bottom: 4 }}
+          padding={{ top: 4, bottom: 1 }}
         >
-          <div>
+          <Logo>
             <img src={logo} alt="logo" />
-          </div>
+          </Logo>
         </Column>
 
         <Column
           responsivity={{ md: 12 }}
           textAlign={{ md: "center" }}
-          padding={{ top: 2, bottom: 2 }}
+          padding={{ top: 2, bottom: 1 }}
         >
           <FooterLinks>
             <a href="hero">Home</a>
@@ -91,7 +97,7 @@ export default function Footer() {
         <Column
           responsivity={{ md: 12 }}
           textAlign={{ md: "center" }}
-          padding={{ top: 2, bottom: 2 }}
+          padding={{ top: 2, bottom: 1 }}
         >
           <FooterInfo>
             {information &&

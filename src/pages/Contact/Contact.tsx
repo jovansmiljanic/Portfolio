@@ -30,6 +30,11 @@ const Form = styled.form`
     background-color: white;
     border-radius: 5px;
     padding: 30px 0;
+
+    h4 {
+      color: black;
+      padding: 20px 0;
+    }
   `}
 `;
 
@@ -265,7 +270,6 @@ export default function Contact() {
       color="white"
     >
       <Wrapper>
-        <Text as="h4">Get a quote</Text>
         <Row justifyContent="center" alignItems="center">
           <Column responsivity={{ md: 4 }}>
             {information &&
@@ -278,6 +282,7 @@ export default function Contact() {
           </Column>
           <Column responsivity={{ md: 8 }}>
             <Form ref={form} onSubmit={sendEmail}>
+              <Text as="h4">Get a quote</Text>
               <Input
                 type="text"
                 name="user_name"
