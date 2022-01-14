@@ -1,5 +1,5 @@
-import Column from "./Column"
-import Row from "./Row"
-import Container from "./Container"
+import Column from "./column";
+import Row from "./row";
+import Container from "./container";
 
-export { Column, Row, Container }
+export { Column, Row, Container };

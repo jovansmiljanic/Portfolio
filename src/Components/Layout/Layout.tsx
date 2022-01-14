@@ -2,8 +2,8 @@
 import React from "react";
 
 // Components
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import NavBar from "./navBar";
+import Footer from "./footer";
 
 export interface LayoutProps {
   children: React.ReactNode;

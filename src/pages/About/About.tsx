@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Column, Container, Row } from "src/components/Grid";
-import { Text } from "src/components/Text";
+import { Column, Container, Row } from "src/components/grid";
+import { Text } from "src/components/text";
 
 // Vendors
 import styled, { css } from "styled-components";

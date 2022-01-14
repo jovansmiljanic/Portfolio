@@ -2,7 +2,7 @@
 import React from "react";
 
 // Local components
-import Layout from "./components/Layout/Layout";
+import Layout from "./components/layout/layout";
 
 // Pages
 import Hero from "./pages/Hero/Hero";
@@ -19,6 +19,7 @@ function App() {
         <Projects />
         <Contact />
       </Layout>
+      ,
     </div>
   );
 }

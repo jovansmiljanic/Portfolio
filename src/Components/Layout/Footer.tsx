@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 
 import logo from "../../assets/logo.svg";
-import { Container, Row, Column } from "../Grid";
+import { Container, Row, Column } from "../grid";
 
 const FooterLinks = styled.div`
   ${({ theme: { colors, defaultRadius, defaultGutter } }) => css`

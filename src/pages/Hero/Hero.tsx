@@ -2,8 +2,8 @@ import React from "react";
 
 import { ReactComponent as Github } from "../../assets/github.svg";
 import { ReactComponent as Linkedin } from "../../assets/linkedin.svg";
-import { Column, Container, Row } from "../../components/Grid";
-import { Text } from "../../components/Text";
+import { Column, Container, Row } from "../../components/grid";
+import { Text } from "../../components/text";
 
 // Vendors
 import styled, { css } from "styled-components";

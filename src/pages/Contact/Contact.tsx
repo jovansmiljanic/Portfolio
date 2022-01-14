@@ -2,8 +2,8 @@
 import React, { useRef, useState } from "react";
 
 // Local components
-import { Container, Row, Column } from "src/components/Grid";
-import { Text } from "src/components/Text";
+import { Container, Row, Column } from "src/components/grid";
+import { Text } from "src/components/text";
 
 // Vendors
 import styled, { css } from "styled-components";
@@ -267,7 +267,7 @@ export default function Contact() {
       <Wrapper>
         <Text as="h4">Get a quote</Text>
         <Row justifyContent="center" alignItems="center">
-          <Column responsivity={{ md: 6 }}>
+          <Column responsivity={{ md: 4 }}>
             {information &&
               information.map(info => (
                 <InfoGroup key={info.info}>
@@ -276,7 +276,7 @@ export default function Contact() {
                 </InfoGroup>
               ))}
           </Column>
-          <Column responsivity={{ md: 6 }}>
+          <Column responsivity={{ md: 8 }}>
             <Form ref={form} onSubmit={sendEmail}>
               <Input
                 type="text"
