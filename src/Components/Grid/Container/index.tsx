@@ -48,7 +48,7 @@ const Container = styled.div<Props>`
 
     ${height &&
     `
-      height: ${height}vh;
+      min-height: ${height}vh;
     `}
 
 
