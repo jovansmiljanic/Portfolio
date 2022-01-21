@@ -2,8 +2,8 @@
 import React, { useRef, useState } from "react";
 
 // Local components
-import { Container, Row, Column } from "src/components/grid";
-import { Text } from "src/components/text";
+import { Container, Row, Column } from "../../Components/Grid";
+import { Text } from "../../Components/Text";
 
 // Vendors
 import styled, { css } from "styled-components";

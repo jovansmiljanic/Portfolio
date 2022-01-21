@@ -4,14 +4,14 @@ import type { FC } from "react";
 // Vendors
 import styled, { css } from "styled-components";
 
-interface Row {
+interface Roww {
   padding?: { [key: string]: number };
   children: any;
   alignItems?: string;
   justifyContent?: string;
 }
 
-const Row = styled.div<Row>`
+const Row = styled.div<Roww>`
   display: flex;
   flex-wrap: wrap;
   flex: 1;
@@ -46,7 +46,12 @@ const Row = styled.div<Row>`
   `}
 `;
 
-const index: FC<Row> = ({ alignItems, justifyContent, children, ...props }) => {
+const index: FC<Roww> = ({
+  alignItems,
+  justifyContent,
+  children,
+  ...props
+}) => {
   return (
     <Row {...props} justifyContent={justifyContent} alignItems={alignItems}>
       {children}

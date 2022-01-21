@@ -6,7 +6,7 @@ import logo from "../../assets/logo.svg";
 
 // Vendors
 import styled, { css } from "styled-components";
-import { Column, Container, Row } from "../grid";
+import { Container, Row, Column } from "../../Components/Grid";
 
 const Logo = styled.div`
   ${({ theme: { colors, defaultRadius, defaultGutter } }) => css`

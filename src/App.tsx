@@ -2,7 +2,7 @@
 import React from "react";
 
 // Local components
-import Layout from "./components/layout/layout";
+import Layout from "./Components/Layout/Layout";
 
 // Pages
 import Hero from "./pages/Hero/Hero";
